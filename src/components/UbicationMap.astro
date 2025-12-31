@@ -1,0 +1,14 @@
+---
+
+---
+
+<div id="map" class="w-[95%] h-80 my-4 max-w-lg md:max-w-md md:m-4"></div>
+
+<script type="module">
+    var map = L.map("map", {
+        attributionControl: false,
+    }).setView([-11.055909, -75.329921], 17);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+    var marker = L.marker([-11.055909, -75.329921]).addTo(map);
+    marker.bindPopup("<b>Jr. Arica N°322</b>").openPopup();
+</script>

@@ -1,0 +1,95 @@
+---
+import Link from "./Link.astro";
+---
+
+<nav class="grid sm:my-1 lg:h-[55vh]">
+    <ul
+        class="grid grid-cols-[repeat(2,minmax(90px,1fr))] md:grid-cols-[repeat(3,minmax(90px,1fr))] text-center mb-3 gap-2 md:gap-5"
+    >
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Combos" id="#Combos" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Chancho" id="#Chancho" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Arroces" id="#Arroces" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Sopas Especiales" id="#Sopas-Especiales" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Platos Especiales" id="#Platos-Especiales" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Pollo Enrollado" id="#Pollo-Enrollado" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Tallarines" id="#Tallarines" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Langostinos" id="#Langostinos" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Frituras" id="#Frituras" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Tortillas" id="#Tortillas" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Comidas Vegetarianas" id="#Comidas-Vegetarianas" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Bebidas" id="#Bebidas" />
+        </li>
+
+        <li
+            class="flex place-content-center place-items-center text-black w-full"
+        >
+            <Link name="Menú Familiar" id="#Menu-Familiar" />
+        </li>
+    </ul>
+</nav>
+
+<style>
+    @media (min-width: 768px) {
+        ul {
+            grid-auto-rows: 1fr;
+        }
+    }
+</style>

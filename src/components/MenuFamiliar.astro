@@ -1,0 +1,106 @@
+---
+import MenuCard from "../components/MenuCard.astro";
+const { id } = Astro.props;
+---
+
+<div class="snap-start scroll-py-16 py-[20px]" id="Menu-Familiar">
+    <div
+        class="font-sans block min-w-min w-[45%] mb-4 mx-auto py-2 px-1 rounded-md bg-gradient-to-r from-orange-300 to-yellow-400 text-2xl text-center font-bold"
+    >
+        <h2 class="min-w-max sm:text-4xl">Menú Familiar</h2>
+    </div>
+
+    <div class="grid md:grid-cols-[repeat(2,minmax(90px,1fr))]">
+        <!--MENÚ FAMILIAR "3A"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '3A'" MenuPrice="81.00">
+            <p><span class="mr-1">☆</span>3 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>1 Tallarin Saltadado c/ Pollo y
+                Verduras
+            </p>
+            <p><span class="mr-1">☆</span>Chicharrón c/ Piña</p>
+            <p><span class="mr-1">☆</span>1 Porcion de Wantán</p>
+        </MenuCard>
+
+        <!--MENÚ FAMILIAR "3B"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '3B'" MenuPrice="94.00">
+            <p><span class="mr-1">☆</span>3 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>1 Tallarin Saltadado c/ Pollo y
+                Verduras
+            </p>
+            <p><span class="mr-1">☆</span>1 Taypa</p>
+            <p><span class="mr-1">☆</span>Alitas fritas</p>
+        </MenuCard>
+
+        <!--MENÚ FAMILIAR "4A"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '4A'" MenuPrice="107.00">
+            <p><span class="mr-1">☆</span>4 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>1 Tallarin Saltadado c/ Pollo y
+                Verduras
+            </p>
+            <p><span class="mr-1">☆</span>1 Wantán Frito</p>
+            <p><span class="mr-1">☆</span>1 Tipakay</p>
+            <p><span class="mr-1">☆</span>Alitas fritas</p>
+        </MenuCard>
+
+        <!--MENÚ FAMILIAR "4B"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '4B'" MenuPrice="125.00">
+            <p><span class="mr-1">☆</span>4 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>1 Tallarin Taypa
+            </p>
+            <p><span class="mr-1">☆</span>1 Kamlú Wantán</p>
+            <p><span class="mr-1">☆</span>Alitas fritas</p>
+            <p><span class="mr-1">☆</span>Chijaukay</p>
+        </MenuCard>
+
+        <!--MENÚ FAMILIAR "5A"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '5A'" MenuPrice="130.00">
+            <p><span class="mr-1">☆</span>5 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>1 Tallarin Saltado c/ Pollo y Chancho
+            </p>
+            <p><span class="mr-1">☆</span>1 Alitas Fritas</p>
+            <p><span class="mr-1">☆</span>1 Chicharrón c/ Piña</p>
+            <p><span class="mr-1">☆</span>Chijaukay</p>
+        </MenuCard>
+
+        <!--MENÚ FAMILIAR "5B"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '5B'" MenuPrice="160.00">
+            <p><span class="mr-1">☆</span>5 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>1 Tallarin Saltado c/ Pollo, Chancho,
+                Langostino
+            </p>
+            <p><span class="mr-1">☆</span>1 Kamlú Wantan</p>
+            <p>
+                <span class="mr-1">☆</span>1 Enrollado en Salsa Ostión
+            </p>
+            <p><span class="mr-1">☆</span>1 Taypa</p>
+            <p><span class="mr-1">☆</span>Alitas Fritas</p>
+        </MenuCard>
+
+        <!--MENÚ FAMILIAR "6A"-->
+        <MenuCard MenuTitle="MENÚ FAMILIAR '6A'" MenuPrice="192.00">
+            <p><span class="mr-1">☆</span>6 Arroz Chaufa</p>
+            <p>
+                <span class="mr-1">☆</span>2 Tallarin Samsi
+            </p>
+            <p><span class="mr-1">☆</span>1 Chicharrón c/ Piña</p>
+            <p><span class="mr-1">☆</span>1 Wantán Frito</p>
+            <p>
+                <span class="mr-1">☆</span>2 Porciones Alitas Fritas
+            </p>
+        </MenuCard>
+    </div>
+</div>
+
+<style>
+    @media (min-width: 768px) {
+        div {
+            grid-auto-rows: 1fr;
+        }
+    }
+</style>

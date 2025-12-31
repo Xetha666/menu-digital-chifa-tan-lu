@@ -1,0 +1,103 @@
+---
+const { MenuTitle, MenuPrice, className = "" } = Astro.props;
+import MENU_FAMILIAR_IMAGES from "../data/MenuFamiliarImages.json";
+
+// Función para normalizar el MenuTitle y generar un id seguro
+function createSafeId(title: string) {
+    return title
+        .toLowerCase()
+        .normalize("NFD") // Normaliza los caracteres acentuados (ej. Ú -> U)
+        .replace(/[\u0300-\u036f]/g, "") // Elimina marcas diacríticas (acentos)
+        .replace(/[^a-z0-9\s-]/g, "") // Elimina caracteres no alfanuméricos excepto espacios y guiones
+        .replace(/\s+/g, "-") // Reemplaza espacios por guiones
+        .replace(/-+/g, "-") // Reemplaza múltiples guiones por uno solo
+        .trim(); // Elimina espacios/guiones al inicio o final
+}
+const safeMenuId = createSafeId(MenuTitle);
+const menuData = MENU_FAMILIAR_IMAGES.find((item) => item.menu === MenuTitle);
+const images = menuData ? menuData.images : [];
+---
+
+<article
+    class="relative w-[90%] max-w-xs mx-auto my-4 md:w-[80%] md:max-w-sm md:my-5 lg:my-8 font-custom"
+>
+    <header
+        class="w-[95%] mx-auto bg-gradient-to-r from-red-800 to-red-700 outline-4 outline outline-black text-center"
+    >
+        <h2 class="text-yellow-100 text-base font-sans font-bold">
+            {MenuTitle}
+        </h2>
+    </header>
+
+    <div
+        class:list={[
+            "relative w-full h-60 border-4 border-solid border-black bg-yellow-50 text-gray-800 text-base p-2",className]}>
+        <slot />
+        <footer
+            class="absolute -bottom-3 -right-3 w-2/5 bg-red-700 outline-4 outline outline-yellow-600 text-center"
+        >
+            <p class="text-yellow-100 text-base font-sans">S/{MenuPrice}</p>
+        </footer>
+
+        <!-- Botón para abrir el modal -->
+        {
+            images.length > 0 && (
+                <button
+                    class="absolute bottom-2 left-2 bg-gradient-to-r from-red-800 to-red-700 text-yellow-100 px-3 py-1 rounded hover:bg-red-600 transition-colors"
+                    onclick={`document.getElementById('custom-modal-${safeMenuId}-wrapper').classList.remove('hidden')`}
+                >
+                    Mostrar
+                </button>
+            )
+        }
+    </div>
+</article>
+
+<!-- Modal personalizado -->
+{
+    images.length > 0 && (
+        <div
+            id={`custom-modal-${safeMenuId}-wrapper`}
+            class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+        >
+            <div class="relative transition-all duration-300 bg-black bg-opacity-70 z-50  rounded-lg  w-[90%] max-w-2xl max-h-[90vh] overflow-y-auto p-6">
+                <button
+                    class="fixed top-0 right-3 text-white hover:text-gray-700 text-xl font-bold sm:text-3xl"
+                    onclick={`document.getElementById('custom-modal-${safeMenuId}-wrapper').classList.add('hidden')`}
+                >
+                    ✕
+                </button>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {images.map((img) => (
+                        <div class="aspect-w-1 aspect-h-1">
+                            <img
+                                src={img}
+                                alt={`Imagen de ${MenuTitle}`}
+                                class="w-[90%] max-w-xs h-full rounded-lg my-0 mx-auto"
+                                loading="lazy"
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+<style>
+    .fixed.inset-0 {
+        backdrop-filter: blur(2px);
+    }
+
+    .aspect-w-1 {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .aspect-h-1 img {
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+    }
+</style>

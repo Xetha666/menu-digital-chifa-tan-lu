@@ -1,0 +1,324 @@
+[
+  {
+    "id": 1,
+    "number": "Combo 1",
+    "content": "Aeropuerto c/ Alitas",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 2,
+    "number": "Combo 2",
+    "content": "Pollo c/ Champiñones",
+    "price": 17.00 ,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 3,
+    "number": "Combo 3",
+    "content": "Pollo c/ Orejitas + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 4,
+    "number": "Combo 4",
+    "content": "Pollo c/ Caigua Amarga + Arroz Blanco",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 5,
+    "number": "Combo 5",
+    "content": "Pollo c/ Piña + Chaufa",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 6,
+    "number": "Combo 6",
+    "content": "Pollo c/ Verduras + Chaufa",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 7,
+    "number": "Combo 7",
+    "content": "Pollo c/ Tamarindo + Chaufa",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 8,
+    "number": "Combo 8",
+    "content": "Pollo c/ Tausi + Chaufa",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 9,
+    "number": "Combo 9",
+    "content": "Aeropuerto de Pollo",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 10,
+    "number": "Combo 10",
+    "content": "Pollo c/ Durazno+ Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 11,
+    "number": "Combo 11",
+    "content": "Pollo al Ajo c/ Verduras + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 12,
+    "number": "Combo 12",
+    "content": "Tallarin c/ Pollo + Chaufa",
+    "price": 16.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 13,
+    "number": "Combo 13",
+    "content": "Tallarin c/ Pollo",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 14,
+    "number": "Combo 14",
+    "content": "Tallarin c/ Champiñones + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 15,
+    "number": "Combo 15",
+    "content": "Tallarin c/ Orejitas + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 16,
+    "number": "Combo 16",
+    "content": "Tallarin en Salsa Curry + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 17,
+    "number": "Combo 17",
+    "content": "Chancho c/ Caigua Amarga",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 18,
+    "number": "Combo 18",
+    "content": "Chancho c/ Verduras",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 19,
+    "number": "Combo 19",
+    "content": "Chancho c/ Tamarindo",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 20,
+    "number": "Combo 20",
+    "content": "Chancho al Ajo c/ Verduras",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 21,
+    "number": "Combo 21",
+    "content": "Tallarin c/ Chancho",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 22,
+    "number": "Combo 22",
+    "content": "Enrollado en Salsa de Ostion + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 23,
+    "number": "Combo 23",
+    "content": "Enrollado en Salsa Blanca + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 24,
+    "number": "Combo 24",
+    "content": "Enrollado en Salsa Curry + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 25,
+    "number": "Combo 25",
+    "content": "Enrollado c/ Champiñones + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 26,
+    "number": "Combo 26",
+    "content": "Enrollado c/ Orejitas + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 27,
+    "number": "Combo 27",
+    "content": "Enrollado c/ Piña + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 28,
+    "number": "Combo 28",
+    "content": "Enrollado c/ Durazno + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 29,
+    "number": "Combo 29",
+    "content": "Chicharrón c/ Limón + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 30,
+    "number": "Combo 30",
+    "content": "Chicharrón en Salsa Curry + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 31,
+    "number": "Combo 31",
+    "content": "Chicharrón en Salsa de Ostion + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 32,
+    "number": "Combo 32",
+    "content": "Chicharrón c/ Tausi + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 33,
+    "number": "Combo 33",
+    "content": "Chicharrón c/ Piña + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 34,
+    "number": "Combo 34",
+    "content": "Alitas c/ Limón + Chaufa",
+    "price": 16.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 35,
+    "number": "Combo 35",
+    "content": "Alitas c/ Tausi + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 36,
+    "number": "Combo 36",
+    "content": "Alitas c/ Piña + Chaufa",
+    "price": 18.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 37,
+    "number": "Combo 37",
+    "content": "Alitas c/ Verduras + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 38,
+    "number": "Combo 38",
+    "content": "Kamlu Wantán + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 39,
+    "number": "Combo 39",
+    "content": "Chaufa c/ Pollo",
+    "price": 15.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 40,
+    "number": "Combo 40",
+    "content": "Pollo c/ Frijoles + Chaufa",
+    "price": 16.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 41,
+    "number": "Combo 41",
+    "content": "Chijaukay + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 42,
+    "number": "Combo 42",
+    "content": "Tipakay + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 43,
+    "number": "Combo 43",
+    "content": "Arroz Chaufa + Enrollado de Pollo + Kamlu Wantan",
+    "price": 22.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 44,
+    "number": "Combo 44",
+    "content": "Arroz Chaufa + Tallarin + Alitas c/ Piña",
+    "price": 22.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 45,
+    "number": "Combo 45",
+    "content": "Limonkay + Chaufa",
+    "price": 19.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  },
+  {
+    "id": 46,
+    "number": "Combo 46",
+    "content": "Chancho c/ Piña + Chaufa",
+    "price": 17.00,
+    "url":  "/src/assets/infinite-scroll-image1.png"
+  }
+]

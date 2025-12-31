@@ -1,0 +1,67 @@
+---
+const images = [
+    "/src/assets/infinite-scroll-image1.png",
+    "/src/assets/infinite-scroll-image2.png",
+    "/src/assets/infinite-scroll-image3.png",
+    "/src/assets/infinite-scroll-image4.png",
+    "/src/assets/infinite-scroll-image5.png",
+    "/src/assets/infinite-scroll-image6.png",
+]; // Reemplaza con tus rutas de imágenes
+---
+
+<div class="slider my-8">
+    <div class="slide-track">
+        {
+            images.map((src) => (
+                <div class="slide">
+                    <img src={src} alt="Gallery image" class="gallery-image" />
+                </div>
+            ))
+        }
+        {/* Duplicamos las imágenes para el efecto infinito */}
+        {
+            images.map((src) => (
+                <div class="slide">
+                    <img src={src} alt="Gallery image" class="gallery-image" />
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    .slider {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slider .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 12);
+    }
+
+    .slider .slide {
+        width: 200px;
+    }
+
+    .slider .slide img {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        gap: 2rem;
+    }
+
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(calc(-200px * 6));
+            transform: translateX(calc(-200px * 6));
+        }
+    }
+</style>

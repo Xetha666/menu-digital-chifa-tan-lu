@@ -1,0 +1,532 @@
+{
+    "Chancho": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Chancho Asado c/ Balsamina",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chancho Asado c/ Verduras",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chancho Asado al Ajo",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chancho Asado c/ Tamarindo",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chancho Asado c/ Piña",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        }
+    ],
+    "Arroces": [
+        {
+              
+            "UrlImage": "",
+            "FoodName": "Arroz Blanco",
+            "FoodPrice": "4.00",
+            "FoodIngredients": "",
+            "showButton": false
+        },
+        {
+            "UrlImage": "/src/assets/preview-foods/preview-arroz-chaufa-pollo.webp",
+            "FoodName": "Arroz Chaufa c/ Pollo",
+            "FoodPrice": "12.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+               
+            "UrlImage": "",
+            "FoodName": "Arroz Chaufa Cristal",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+            "UrlImage": "/src/assets/preview-foods/preview-arroz-chaufa-chancho.webp",
+            "FoodName": "Arroz Chaufa c/ Chancho Asado",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+               
+            "UrlImage": "",
+            "FoodName": "Arroz Chaufa Mixto Especial",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+               
+            "UrlImage": "",
+            "FoodName": "Arroz Chaufa Sansi",
+            "FoodPrice": "20.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+               
+            "UrlImage": "",
+            "FoodName": "Arroz Chaufa c/ Langostinos",
+            "FoodPrice": "19.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+               
+            "UrlImage": "",
+            "FoodName": "Aeropuerto",
+            "FoodPrice": "14.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {
+               
+            "UrlImage": "",
+            "FoodName": "Aeropuerto Especial",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Arroz..."
+        }
+    ],
+     "Sopas Especiales": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Sopa de Kión c/ Wantán",
+            "FoodPrice": "12.00",
+            "FoodIngredients": "Kión..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Sopa de Kión c/ Fideos Tallarín",
+            "FoodPrice": "12.00",
+            "FoodIngredients": "Fideos..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Sopa de Pollo Especial",
+            "FoodPrice": "10.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Sopa Fuchifú",
+            "FoodPrice": "14.00",
+            "FoodIngredients": "Fideos..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Sopa 7 Sabores",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Fideos..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Sopa Wantán Especial",
+            "FoodPrice": "14.00",
+            "FoodIngredients": "Fideos..."
+        }
+    ],
+    "Platos Especiales": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo c/ Orejitas o Wanyi",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo c/ Champiñones",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Saltado c/ Verduras",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo c/ Piña",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo c/ Balsamina",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Entomatado",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo en Salsa Ostión",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo c/ Tausi",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo en Salsa Curry",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Saltado c/ Frijolito",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Taypa",
+            "FoodPrice": "25.00",
+            "FoodIngredients": "Un poquito de todo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Taypa a la Plancha",
+            "FoodPrice": "30.00",
+            "FoodIngredients": "Un poquito de todo a la plancha..."
+        }
+    ],
+    "Pollo Enrollado": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Enrollado en Salsa Ostión",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Enrollado en Salsa Curry",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Enrollado c/ Champiñones",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Enrollado c/ Wanyi",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Enrollado c/ Piña",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pollo Enrollado c/ Durazno",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Pollo..."
+        }
+    ],
+    "Tortillas": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Tortilla Especial c/ Langostinos",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Langostinos..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tortilla c/ Pollo",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tortilla c/ Verduras",
+            "FoodPrice": "13.00",
+            "FoodIngredients": "Huevo..."
+        }
+    ],
+    "Comidas Vegetarianas": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Chaufa c/ Verduras",
+            "FoodPrice": "12.00",
+            "FoodIngredients": "Arroz..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Verduras al Ajo",
+            "FoodPrice": "15.00",
+            "FoodIngredients": "Ajo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Verduras Taypa",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Verduritas..."
+        }
+    ],
+    "Refrescos": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicha Morada Jarra",
+            "FoodPrice": "10.00",
+            "FoodIngredients": "Maiz..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicha Morada 1/2 Litro",
+            "FoodPrice": "5.00",
+            "FoodIngredients": "Maiz..."
+        }  
+    ],
+    "Infusiones": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Té Jazmin",
+            "FoodPrice": "4.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Té, Aniz, Manzanilla, Té c/ Canela",
+            "FoodPrice": "3.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Café",
+            "FoodPrice": "4.00",
+            "FoodIngredients": "..."
+        }       
+    ],
+    "Gaseosa y Cervezas": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Coca o Inka de 3 LT.",
+            "FoodPrice": "14.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Coca ó Inka de 2 LT.",
+            "FoodPrice": "12.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Coca ó Inka de 1 LT.",
+            "FoodPrice": "7.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Coca o Inka de 1/2 LT.",
+            "FoodPrice": "3.50",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Gordita",
+            "FoodPrice": "4.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Personal",
+            "FoodPrice": "2.50",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Agua Mineral",
+            "FoodPrice": "2.50",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Yumbo",
+            "FoodPrice": "4.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Cusqueña Trigo",
+            "FoodPrice": "10.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Pilsen",
+            "FoodPrice": "9.00",
+            "FoodIngredients": "..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Sporade",
+            "FoodPrice": "3.00",
+            "FoodIngredients": "..."
+        }
+    ],
+    "Tallarines": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin Saltado c/ Pollo y Verduras",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin Saltado c/ Pollo y Chancho",
+            "FoodPrice": "20.00",
+            "FoodIngredients": "Pollo y Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin Saltado c/ Pollo en Salsa Ostión",
+            "FoodPrice": "20.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin c/ Pollo en Salsa Curry",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin c/ Langostinos",
+            "FoodPrice": "20.00",
+            "FoodIngredients": "Langostinos..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin Saltado Mixto",
+            "FoodPrice": "24.00",
+            "FoodIngredients": "Pollo, Chancho y Langostinos..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin Taypa",
+            "FoodPrice": "27.00",
+            "FoodIngredients": "Tallarin..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tallarin Samsi",
+            "FoodPrice": "30.00",
+            "FoodIngredients": "Tallarin..."
+        }
+    ],
+    "Langostinos": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Langostinos c/ Champiñones",
+            "FoodPrice": "20.00",
+            "FoodIngredients": "Langostinos, Champiñones..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Langostinos c/ Wanyi",
+            "FoodPrice": "20.00",
+            "FoodIngredients": "Langostinos..."
+        }
+    ],
+    "Frituras": [
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicharrón de Pollo Frito (Porción)",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicharrón en Salsa de Tausi",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicharrón en Salsa Ostion",
+            "FoodPrice": "17.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chijaukay",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Tipakay",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Wantan c/ Tamarindo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Limonkay",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Pollo..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Alitas Fritas (Porción)",
+            "FoodPrice": "16.00",
+            "FoodIngredients": "Alitas..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Alitas en Salsa Tausi",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Alitas..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Alitas c/ Piña",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Alitas, Piña..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicharrón c/ Piña",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Chancho, Piña..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicharrón en Salsa Curry",
+            "FoodPrice": "18.00",
+            "FoodIngredients": "Chancho..."
+        },
+        {   
+            "UrlImage": "",
+            "FoodName": "Chicharron c/ Durazno",
+            "FoodPrice": "19.00",
+            "FoodIngredients": "Chicharron, Durazno..."
+        }
+    ]
+    
+    
+    
+}
+
