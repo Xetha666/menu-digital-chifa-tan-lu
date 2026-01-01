@@ -4,43 +4,45 @@ import ComboItem from "./ComboItem.astro";
 import FoodContainer from "./FoodContainer.astro";
 import FoodContent from "./FoodContent.astro";
 import FoodInfo from "../data/FoodContent.json";
-const categories = Object.keys(FoodInfo);
+
+interface FoodItem {
+  UrlImage: string;
+  FoodName: string;
+  FoodPrice: string | number;
+  FoodIngredients: string;
+  showButton?: boolean;
+  className?: string;
+}
+
+const categories = Object.keys(FoodInfo) as Array<keyof typeof FoodInfo>;
 const toValidId = (str: string) => str.replace(/\s+/g, "-");
 ---
 
 <main>
-    <!--Combos-->
-    <ComboContainer category="Combos" id="Combos">
-        <ComboItem />
-    </ComboContainer>
+  <!--Combos-->
+  <ComboContainer category="Combos" id="Combos">
+    <ComboItem />
+  </ComboContainer>
 
-    <!--Secciones-->
-    {
-        categories.map((category) => (
-            <FoodContainer category={category} id={toValidId(category)}>
-                {FoodInfo[category].map(
-                    (food: {
-                        UrlImage: any;
-                        FoodName: unknown;
-                        FoodPrice: unknown;
-                        FoodIngredients: unknown;
-                        showButton: any;
-                        className: any;
-                    }) => (
-                        <FoodContent
-                            UrlImage={food.UrlImage || ""}
-                            FoodName={food.FoodName}
-                            FoodPrice={food.FoodPrice}
-                            FoodIngredients={food.FoodIngredients}
-                            showButton={food.showButton ?? true}
-                            className={food.className || ""}
-                        />
-                    ),
-                )}
-                
-            </FoodContainer>
-        ))
-    }
+  <!--Secciones-->
+  {
+    categories.map((category) => (
+      <FoodContainer category={category} id={toValidId(category)}>
+        {
+          FoodInfo[category].map((food: FoodItem) => (
+            <FoodContent
+              UrlImage={food.UrlImage || ""}
+              FoodName={food.FoodName}
+              FoodPrice={food.FoodPrice}
+              FoodIngredients={food.FoodIngredients}
+              showButton={food.showButton ?? true}
+              className={food.className || ""}
+            />
+          ))
+        }
+      </FoodContainer>
+    ))
+  }
 </main>
 
 <style></style>

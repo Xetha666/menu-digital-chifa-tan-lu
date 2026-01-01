@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ZCOOL XiaoWei";
+  src: url("/fonts/zcool-xiaowei-latin-400-normal.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/roboto-mono-latin-400-normal.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GeistSans";
+  src: url("/fonts/geist-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-custom: "ZCOOL XiaoWei", sans-serif;
+  --font-roboto: "RobotoMono", sans-serif;
+  --font-geist: "GeistSans", sans-serif;
+
+  /* Colores */
+  --color-title: #e47777;
+  --color-subtitle: #545454;
+  --color-light-accent-color: #d84c4c;
+  --color-gray-custom: #71717a;
+
+  /* Variables para utilidades */
+  --text-shadow-red: 0px 0px 10px rgba(255, 0, 0, 0.6);
+  --text-shadow-green: 0px 0px 10px rgba(0, 255, 0, 0.6);
+}
+
+@utility text-shadow-red {
+  text-shadow: var(--text-shadow-red);
+}
+
+@utility text-shadow-green {
+  text-shadow: var(--text-shadow-green);
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

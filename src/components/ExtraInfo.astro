@@ -4,19 +4,15 @@ const {
         { day: "Domingo", hours: "Cerrado", isClosed: true },
         { day: "Lunes", hours: "9:00 - 18:00", isClosed: false },
         { day: "Martes", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Miércoles", hours: "9:00 - 18:00", isClosed: false },
+        { day: "Miercoles", hours: "9:00 - 18:00", isClosed: false },
         { day: "Jueves", hours: "9:00 - 18:00", isClosed: false },
         { day: "Viernes", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Sábado", hours: "10:00 - 14:00", isClosed: false },
+        { day: "Sabado", hours: "10:00 - 14:00", isClosed: false },
     ],
 } = Astro.props;
 ---
 
-<div
-    id="schedule-container"
-    class="font-custom flex justify-center items-center mb-4 bg-transparent rounded-lg lg:text-4xl "
-    data-schedule={JSON.stringify(schedule)}
->
+<div id="schedule-container" class="font-custom flex justify-center items-center mb-4 bg-transparent rounded-lg lg:text-4xl " data-schedule={JSON.stringify(schedule)}>
     <div class="flex items-center">
         <img
             src="/src/assets/delivery-man.png"
@@ -36,10 +32,10 @@ const {
         "Domingo",
         "Lunes",
         "Martes",
-        "Miércoles",
+        "Miercoles",
         "Jueves",
         "Viernes",
-        "Sábado",
+        "Sabado",
     ];
     const currentDayIndex = new Date().getDay();
     const currentDay = daysOfWeek[currentDayIndex];

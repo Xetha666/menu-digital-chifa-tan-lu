@@ -3,58 +3,67 @@ import COMBOS from "../data/Combos.json";
 ---
 
 <div
-    class="grid gap-8 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] my-0 mx-auto"
+  class="grid gap-8 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] my-0 mx-auto"
 >
-    {
-        COMBOS.map((combo) => (
-            <article class="w-full my-0 mx-auto font-sans font-bold max-w-md sm:max-w-sm">
-                <div class="relative w-[60%] outline-2 outline outline-black my-0 mx-auto text-center sm:w-4/5">
-                    <div class="absolute -top-4 left-1/4 w-1/2 bg-gradient-to-r from-red-800 to-red-700 text-yellow-100 outline-2 outline outline-black text-base font-bold my-0 mx-auto sm:w-3/5">
-                        <h2 class="">{combo.number}</h2>
-                    </div>
-                    <div class="flex flex-col justify-center items-center">
-                        <div class="w-full min-h-20 py-4 flex justify-center items-center bg-yellow-50">
-                            <p class="text-gray-800 text-base">
-                                {combo.content}
-                            </p>
-                        </div>
+  {
+    COMBOS.map((combo, index) => (
+      <article class="w-full my-0 mx-auto font-sans font-bold max-w-md sm:max-w-sm">
+        <div class="relative w-[60%] outline-2 outline outline-black my-0 mx-auto text-center sm:w-4/5">
+          <div class="absolute -top-4 left-1/4 w-1/2 bg-linear-to-r from-red-800 to-red-700 text-yellow-100 outline-2 outline outline-black text-base font-bold my-0 mx-auto sm:w-3/5">
+            <h2 class="">{combo.number}</h2>
+          </div>
 
-                        <div class="absolute bottom-0 right-1">
-                            <button
-                                class="flex h-6 lg:pr-1"
-                                onclick="document.getElementById('modal').showModal()"
-                            >
-                                <img
-                                    class="size-6 pr-1"
-                                    src="/src/assets/preview-icon.png"
-                                    alt="eye-icon"
-                                />
-                                Ver
-                            </button>
-                            <dialog
-                                id="modal"
-                                class="backdrop:bg-black backdrop:opacity-70"
-                            >
-                                <form class="" method="dialog">
-                                    <button class="fixed top-8 text-3xl text-white">
-                                        X
-                                    </button>
-                                </form>
+          <div class="flex flex-col justify-center items-center">
+            <div class="w-full min-h-20 py-4 flex justify-center items-center bg-yellow-50">
+              <p class="text-gray-800 text-base">{combo.content}</p>
+            </div>
 
-                                <picture class="w-full h-full">
-                                    <img src={combo.url} alt="combo-image" />
-                                </picture>
-                            </dialog>
-                        </div>
+            <div class="absolute bottom-0 right-1">
+              {/* IMPORTANTE: El ID ahora es dinámico usando el index */}
+              <button
+                class="flex h-6 lg:pr-1"
+                onclick={`document.getElementById('modal-${index}').showModal()`}
+              >
+                <img
+                  class="size-6 pr-1"
+                  src="/src/assets/preview-icon.png"
+                  alt="eye-icon"
+                />
+                Ver
+              </button>
 
-                        <div class="w-full">
-                            <p class=" bg-red-700 text-yellow-100 text-base">
-                                S/. {combo.price}.00
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        ))
-    }
+              <dialog
+                id={`modal-${index}`}
+                class="backdrop:bg-black/70 bg-transparent w-full h-full max-w-full max-h-full overflow-hidden p-0 outline-none"
+              >
+                <form
+                  method="dialog"
+                  class="relative w-full h-full flex items-center justify-center p-4"
+                >
+                  <button class="fixed top-4 right-4 text-white font-bold text-3xl md:text-5xl z-50">
+                    &times;
+                  </button>
+
+                  <div class="flex items-center justify-center w-full h-full">
+                    <img
+                      src={combo.url}
+                      alt={combo.content}
+                      class="max-w-full max-h-[85vh] object-contain shadow-2xl"
+                      loading="lazy"
+                    />
+                  </div>
+                </form>
+              </dialog>
+            </div>
+
+            <div class="w-full">
+              <p class="bg-red-700 text-yellow-100 text-base">
+                S/. {combo.price.toFixed(2)}
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    ))
+  }
 </div>

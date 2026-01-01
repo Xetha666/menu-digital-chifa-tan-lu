@@ -1,95 +1,69 @@
 ---
 import Background from "../components/Background.astro";
 const { title } = Astro.props;
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<title>{title}</title>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-		/>
+  <head>
+    <title>{title}</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<!--Preload Fonts -->
-		<link
-			rel="preload"
-			href="/fonts/zcool-xiaowei-latin-400-normal.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/fonts/roboto-mono-latin-400-normal.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/fonts/geist-sans-latin-400-normal.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<!--Code for Leaflet - Map Custom (17-26) -->
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-			crossorigin=""
-		/>
-		<script
-			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-			crossorigin=""></script>
-		<meta name="generator" content={Astro.generator} />
-	</head>
-	<body class="font-custom">
-		<div class="max-w-[1200px] my-0 mx-auto w-full">
-			<Background />
-			<slot />
-		</div>
-	</body>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!--Preload Fonts -->
+    <link
+      rel="preload"
+      href="/fonts/zcool-xiaowei-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/roboto-mono-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/geist-sans-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!--Code for Leaflet - Map Custom (17-26) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="font-custom">
+    <div class="max-w-[1200px] my-0 mx-auto w-full">
+      <Background />
+      <slot />
+    </div>
+  </body>
 </html>
 
-<style>
-	@font-face {
-		font-family: "ZCOOL XiaoWei";
-		src: url("/fonts/zcool-xiaowei-latin-400-normal.woff2") format("woff2");
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "RobotoMono";
-		src: url("/fonts/roboto-mono-latin-400-normal.woff2") format("woff2");
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-	@font-face {
-		font-family: "GeistSans";
-		src: url("/fonts/geist-sans-latin-400-normal.woff2") format("woff2");
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-	div {
-		height: 100vh;
-		height: 100dvh;
-		scroll-snap-type: y mandatory;
-		overflow-y: scroll;
-		scroll-behavior: smooth;
-	}
+<style>  
+  div {
+    height: 100vh;
+    height: 100dvh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
 </style>
