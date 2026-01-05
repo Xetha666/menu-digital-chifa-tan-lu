@@ -3,21 +3,21 @@ const { category, id } = Astro.props;
 ---
 
 <section class="grid min-h-dvh snap-start scroll-pt-2 py-1 font-sans" id={id}>
-    <div>
-        <div
-            class="w-min sm:w-fit ml-4 my-4 py-4 px-3 rounded-md bg-linear-to-r from-orange-300 to-yellow-400 text-2xl text-center font-bold"
-        >
-            <h2 class="min-w-min sm:min-w-max sm:text-4xl">{category}</h2>
-        </div>
-
-        <div class="mt-4">
-            <slot />
-        </div>
+  <div>
+    <div
+      class="w-min sm:w-fit ml-4 my-4 py-4 px-3 rounded-md bg-linear-to-r from-orange-300 to-yellow-400 text-2xl text-center font-bold"
+    >
+      <h2 class="min-w-min sm:min-w-max sm:text-4xl select-none">{category}</h2>
     </div>
+
+    <div class="mt-4">
+      <slot />
+    </div>
+  </div>
 </section>
 
 <style>
-    section {
-        grid-template-rows: 1fr auto;
-    }
+  section {
+    grid-template-rows: 1fr auto;
+  }
 </style>
