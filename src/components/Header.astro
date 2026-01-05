@@ -4,43 +4,43 @@ import IndiceContent from "./IndiceContent.astro";
 ---
 
 <header id="Header" class="w-full h-full snap-start p-1">
-    <div class="flex justify-between sm:justify-evenly md:mb-3">
-        <picture>
-            <img
-                class="w-12 h-auto md:w-[70px]"
-                src="/src/assets/chinese-lamp.webp"
-                alt="Lampara China"
-            />
-        </picture>
+  <div class="flex justify-between sm:justify-evenly md:mb-3">
+    <picture>
+      <img
+        class="w-12 h-auto md:w-17.5"
+        src="/src/assets/chinese-lamp.webp"
+        alt="Lampara China"
+      />
+    </picture>
 
-        <div class="flex flex-col justify-center items-center font-custom">
-            <h1
-                class="text-title block text-center font-bold text-4xl md:text-5xl"
-            >
-                Chifa<span class="block sm:inline-flex">Tan Lu</span>
-            </h1>
+    <div class="flex flex-col justify-center items-center font-custom">
+      <h1
+        class="text-title block text-center font-bold text-4xl md:text-5xl select-none"
+      >
+        Chifa<span class="block sm:inline-flex">Tan Lu</span>
+      </h1>
 
-            <h2
-                class="text-subtitle text-center font-bold my-1 text-3xl md:text-4xl after:content-['—'] after:text-title after:ml-1 before:content-['—'] before:text-title before:mr-1"
-            >
-                Indice
-            </h2>
-        </div>
-        <picture>
-            <img
-                class="w-12 h-auto md:w-[70px]"
-                src="/src/assets/chinese-lamp.webp"
-                alt="Lampara China"
-            />
-        </picture>
+      <h2
+        class="text-subtitle text-center font-bold my-1 text-3xl md:text-4xl after:content-['—'] after:text-title after:ml-1 before:content-['—'] before:text-title before:mr-1 select-none"
+      >
+        Indice
+      </h2>
     </div>
-    <IndiceContent />
-    <ExtraInfo />
+    <picture>
+      <img
+        class="w-12 h-auto md:w-[70px]"
+        src="/src/assets/chinese-lamp.webp"
+        alt="Lampara China"
+      />
+    </picture>
+  </div>
+  <IndiceContent />
+  <ExtraInfo />
 </header>
 
 <style>
-    header{
-        display: grid;
-        grid-auto-rows: auto 1fr auto;
-    }
+  header {
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+  }
 </style>
