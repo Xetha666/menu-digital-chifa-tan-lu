@@ -51,19 +51,27 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
   </head>
   <body class="font-custom">
-    <div class="max-w-[1200px] my-0 mx-auto w-full">
+    <div class="max-w-7xl my-0 mx-auto w-full">
       <Background />
       <slot />
     </div>
   </body>
 </html>
 
-<style>  
+<style>
   div {
     height: 100vh;
     height: 100dvh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
+
+    /* Ocultar scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+  }
+  /* Chrome, Safari y Opera */
+  div::-webkit-scrollbar {
+    display: none;
   }
 </style>
