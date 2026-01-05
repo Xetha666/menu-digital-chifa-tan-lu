@@ -1,33 +1,33 @@
 <a
-    href="#Header"
-    id="UpButton"
-    class="absolute bottom-1 right-1 size-10 bg-red-700 text-black rounded-full flex justify-center items-center text-2xl hidden transition-opacity duration-300 ease-in-out opacity-0 z-10"
+  href="#Header"
+  id="UpButton"
+  class="absolute bottom-1 right-1 size-10 bg-red-700 text-black rounded-full flex justify-center items-center text-2xl hidden transition-opacity duration-300 ease-in-out opacity-0 z-10"
 >
-    <span>↑</span>
+  <span class="select-none">↑</span>
 </a>
 
 <script type="module">
-    document.addEventListener("DOMContentLoaded", () => {
-        const upButton = document.getElementById("UpButton");
-        const header = document.getElementById("Header");
+  document.addEventListener("DOMContentLoaded", () => {
+    const upButton = document.getElementById("UpButton");
+    const header = document.getElementById("Header");
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        upButton.classList.add("hidden");
-                        upButton.classList.remove("opacity-100");
-                        upButton.classList.add("opacity-0");
-                    } else {
-                        upButton.classList.remove("hidden");
-                        upButton.classList.remove("opacity-0");
-                        upButton.classList.add("opacity-100");
-                    }
-                });
-            },
-            { threshold: 0.1 },
-        );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            upButton.classList.add("hidden");
+            upButton.classList.remove("opacity-100");
+            upButton.classList.add("opacity-0");
+          } else {
+            upButton.classList.remove("hidden");
+            upButton.classList.remove("opacity-0");
+            upButton.classList.add("opacity-100");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-        observer.observe(header);
-    });
+    observer.observe(header);
+  });
 </script>
