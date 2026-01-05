@@ -11,72 +11,66 @@ import UbicationMap from "./UbicationMap.astro";
 ---
 
 <div class="snap-start py-6 scroll-pt-6">
-    <LogoContainer>
-        <Logo className="w-full h-full" />
-    </LogoContainer>
-    <section>
-        <h3 class="uppercase text-7xl text-center text-black md:text-8xl">
-            Chifa
-            <span class="block">Tan Lu</span>
-        </h3>
-        <p class="font-roboto uppercase tracking-widest text-center lg:text-xl">
-            Expertos en Comida China...
-        </p>
-    </section>
+  <LogoContainer>
+    <Logo className="w-full h-full" />
+  </LogoContainer>
+  <section class="select-none">
+    <h3 class="uppercase text-7xl text-center text-black md:text-8xl">
+      Chifa
+      <span class="block">Tan Lu</span>
+    </h3>
+    <p class="font-roboto uppercase tracking-widest text-center lg:text-xl">
+      Expertos en Comida China...
+    </p>
+  </section>
 
-    <!--Gallery-->
-    <Gallery />
+  <!--Gallery-->
+  <Gallery />
 
-    <!--Contact-->
-    <section class="font-bold">
-        <h2 class="font-sans text-4xl text-center md:text-5xl md:mt-6">
-            Ubicanos
-        </h2>
-        <p
-            class="font-sans font-light text-base text-gray-custom text-center w-[95%] lg:text-xl"
-        >
-            Estamos cerca de ti. Visítanos en cualquiera momento o contáctanos
-            directamente
-        </p>
-        <div
-            class="flex flex-col items-center gap-y-1 my-0 mx-auto md:flex-row md:justify-evenly max-w-4xl"
-        >
-            <UbicationMap />
-            <div
-                class="bg-gray-200
+  <!--Contact-->
+  <section class="font-bold">
+    <h2 class="font-sans text-4xl text-center md:text-5xl md:mt-6 select-none">
+      Ubicanos
+    </h2>
+    <p
+      class="font-sans font-light text-base text-gray-custom text-center w-[95%] lg:text-xl select-none"
+    >
+      Estamos cerca de ti. Visítanos en cualquiera momento o contáctanos
+      directamente
+    </p>
+    <div
+      class="flex flex-col items-center gap-y-1 my-0 mx-auto md:flex-row md:justify-evenly max-w-4xl"
+    >
+      <UbicationMap />
+      <div
+        class="bg-gray-200
                  w-[95%] rounded-lg border-2 border-solid border-gray-400 p-4 max-w-lg md:max-w-[300px] md:flex-col md:h-60 md:mr-4 lg:h-auto lg:pb-4"
-            >
-                <div class="font-geist flex flex-col space-y-5 font-thin">
-                    <UbicationItem text="Jr. Arica N° 322 - La Merced">
-                        <UbicationIcon />
-                    </UbicationItem>
+      >
+        <div class="font-geist flex flex-col space-y-5 font-thin select-none">
+          <UbicationItem text="Jr. Arica N° 322 - La Merced">
+            <UbicationIcon />
+          </UbicationItem>
 
-                    <UbicationItem text="example@gmail.com">
-                        <EmailIcon />
-                    </UbicationItem>
+          <UbicationItem text="example@gmail.com">
+            <EmailIcon />
+          </UbicationItem>
 
-                    <UbicationItem
-                        text="931556246 / 964291952"
-                        className="text-black"
-                    >
-                        <PhoneIcon />
-                    </UbicationItem>
+          <UbicationItem text="931556246 / 964291952" className="text-black">
+            <PhoneIcon />
+          </UbicationItem>
 
-                    <UbicationItem
-                        text="Horario por definir"
-                        className="text-black"
-                    >
-                        <TimeIcon />
-                    </UbicationItem>
+          <UbicationItem text="Horario por definir" className="text-black">
+            <TimeIcon />
+          </UbicationItem>
 
-                    <a
-                        href="https://maps.app.goo.gl/ZtEMrvGLUu8ev98s8"
-                        target="_blank"
-                        class="w-full py-2 px-4 rounded-md bg-black text-white text-center"
-                        >Como llegar</a
-                    >
-                </div>
-            </div>
+          <a
+            href="https://maps.app.goo.gl/ZtEMrvGLUu8ev98s8"
+            target="_blank"
+            class="w-full py-2 px-4 rounded-md bg-black text-white text-center"
+            >Como llegar</a
+          >
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>
