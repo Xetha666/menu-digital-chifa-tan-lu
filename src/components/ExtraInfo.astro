@@ -1,68 +1,72 @@
 ---
 const {
-    schedule = [
-        { day: "Domingo", hours: "Cerrado", isClosed: true },
-        { day: "Lunes", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Martes", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Miercoles", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Jueves", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Viernes", hours: "9:00 - 18:00", isClosed: false },
-        { day: "Sabado", hours: "10:00 - 14:00", isClosed: false },
-    ],
+  schedule = [
+    { day: "Domingo", hours: "Cerrado", isClosed: true },
+    { day: "Lunes", hours: "9:00 - 18:00", isClosed: false },
+    { day: "Martes", hours: "9:00 - 18:00", isClosed: false },
+    { day: "Miercoles", hours: "9:00 - 18:00", isClosed: false },
+    { day: "Jueves", hours: "9:00 - 18:00", isClosed: false },
+    { day: "Viernes", hours: "9:00 - 18:00", isClosed: false },
+    { day: "Sabado", hours: "10:00 - 14:00", isClosed: false },
+  ],
 } = Astro.props;
 ---
 
-<div id="schedule-container" class="font-custom flex justify-center items-center mb-4 bg-transparent rounded-lg lg:text-4xl " data-schedule={JSON.stringify(schedule)}>
-    <div class="flex items-center">
-        <img
-            src="/src/assets/delivery-man.png"
-            alt="delivery-icon"
-            class="size-24 md:size-32 lg:size-48 mr-2"
-        />
-    </div>
-    <div class="text-center">
-        <div id="current-day-schedule"></div>
-    </div>
+<div
+  id="schedule-container"
+  class="font-custom flex justify-center items-center mb-4 bg-transparent rounded-lg lg:text-4xl"
+  data-schedule={JSON.stringify(schedule)}
+>
+  <div class="flex items-center">
+    <img
+      src="/src/assets/delivery-man.png"
+      alt="delivery-icon"
+      class="size-24 md:size-32 lg:size-48 mr-2"
+    />
+  </div>
+  <div class="text-center">
+    <div id="current-day-schedule" class="select-none"></div>
+  </div>
 </div>
 
 <script type="module">
-    const container = document.getElementById("schedule-container");
-    const schedule = JSON.parse(container.dataset.schedule);
-    const daysOfWeek = [
-        "Domingo",
-        "Lunes",
-        "Martes",
-        "Miercoles",
-        "Jueves",
-        "Viernes",
-        "Sabado",
-    ];
-    const currentDayIndex = new Date().getDay();
-    const currentDay = daysOfWeek[currentDayIndex];
-    const currentSchedule = schedule.find((item) => item.day === currentDay);
+  const container = document.getElementById("schedule-container");
+  const schedule = JSON.parse(container.dataset.schedule);
+  const daysOfWeek = [
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
+  ];
+  const currentDayIndex = new Date().getDay();
+  const currentDay = daysOfWeek[currentDayIndex];
+  const currentSchedule = schedule.find((item) => item.day === currentDay);
 
-    const scheduleElement = document.getElementById("current-day-schedule");
-    if (currentSchedule) {
-        const statusText = currentSchedule.isClosed ? "Cerrado" : "Abierto";
-        const statusColor = currentSchedule.isClosed
-            ? "text-red-600 text-shadow-red"
-            : "text-green-600 text-shadow-green";
+  const scheduleElement = document.getElementById("current-day-schedule");
+  if (currentSchedule) {
+    const statusText = currentSchedule.isClosed ? "Cerrado" : "Abierto";
+    const statusColor = currentSchedule.isClosed
+      ? "text-red-600 text-shadow-red"
+      : "text-green-600 text-shadow-green";
 
-        const hoursText = currentSchedule.isClosed
-            ? ""
-            : `${currentSchedule.hours}`;
-        scheduleElement.innerHTML = `
+    const hoursText = currentSchedule.isClosed
+      ? ""
+      : `${currentSchedule.hours}`;
+    scheduleElement.innerHTML = `
             <p class="text-lg md:text-3xl font-medium">${currentDay}</p>
             <p class="${statusColor} md:text-3xl font-bold">${statusText}</p>
             <p class="md:text-2xl">${hoursText}</p>
         `;
-    } else {
-        scheduleElement.innerHTML = `<p>No hay horario disponible para hoy.</p>`;
-    }
+  } else {
+    scheduleElement.innerHTML = `<p>No hay horario disponible para hoy.</p>`;
+  }
 </script>
 
 <style>
-    .schedule-container {
-        display: flex;
-    }
+  .schedule-container {
+    display: flex;
+  }
 </style>
