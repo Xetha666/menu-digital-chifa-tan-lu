@@ -1,10 +1,10 @@
 ---
 const {
-    UrlImage,
-    FoodPrice,
-    showButton = true,
-    FoodName,
-    FoodIngredients,
+  UrlImage,
+  FoodPrice,
+  showButton = true,
+  FoodName,
+  FoodIngredients,
 } = Astro.props;
 
 // Crear un ID único basado en el nombre de la comida
@@ -12,96 +12,91 @@ const modalId = FoodName.toLowerCase().replace(/\s+/g, "-");
 ---
 
 <article class="w-full px-4 py-1">
-    <div class="relative flex items-start gap-4">
-        <div class="grow">
-            <p class="text-xs sm:text-lg md:text-xl lg:text-2xl">{FoodName}</p>
-            <div class="text-xs sm:text-sm lg:text-lg text-gray-400">
-                <p>{FoodIngredients}</p>
-            </div>
-        </div>
-
-        <div class="flex flex-col items-end">
-            <div class="flex justify-end items-center cursor-pointer">
-                {
-                    showButton && (
-                        <button
-                            id={`openModal-${modalId}`}
-                            class="flex justify-center items-center bg-linear-to-l from-orange-300 to-yellow-400 rounded-md font-bold px-2 py-1 sm:text-lg md:text-xl lg:text-2xl">
-                            <img
-                                class="w-6 lg:w-9 mr-1"
-                                src="/src/assets/preview-icon.png"
-                                alt="eye-icon"
-                            />
-                            Ver
-                        </button>
-                    )
-                }
-                <p
-                    class="ml-2 sm:ml-8 sm:text-lg md:text-xl lg:text-2xl min-w-14 text-right"
-                >
-                    S/{FoodPrice}
-                </p>
-            </div>
-        </div>
+  <div class="relative flex items-start gap-4">
+    <div class="grow">
+      <p class="text-xs sm:text-lg md:text-xl lg:text-2xl">{FoodName}</p>
+      <div class="text-xs sm:text-sm lg:text-lg text-gray-400">
+        <p>{FoodIngredients}</p>
+      </div>
     </div>
-    <!--Modal -->
-    <div
-        id={`imageModal-${modalId}`}
-        class="fixed inset-0 bg-black/70  z-50 invisible opacity-0 flex flex-col items-center justify-center transition-all duration-300"
-    >
-        <div
-            class="relative mx-auto flex flex-col justify-center items-center max-w-xl md:max-w-4xl lg:max-w-5xl"
-        >
+
+    <div class="flex flex-col items-end">
+      <div class="flex justify-end items-center gap-2">
+        {
+          showButton && (
             <button
-                id={`closeModal-${modalId}`}
-                class="absolute -top-4 text-white text-7xl hover:text-gray-300"
+              id={`openModal-${modalId}`}
+              class="cursor-pointer flex justify-center items-center bg-linear-to-l from-orange-300 to-yellow-400 rounded-md font-bold px-2 py-1 sm:text-lg md:text-xl lg:text-2xl"
             >
-                &times;
+              <img
+                class="w-6 lg:w-9 mr-1"
+                src="/src/assets/preview-icon.png"
+                alt="eye-icon"
+              />
+              Ver
             </button>
-
-            <img
-                src={UrlImage}
-                alt={FoodName}
-                class="max-w-[75%] rounded-lg shadow-xl mx-auto aspect-square"
-            />
-        </div>
+          )
+        }
+        <p class="sm:text-lg min-w-14 md:text-xl lg:text-2xl">
+          S/{FoodPrice}
+        </p>
+      </div>
     </div>
+  </div>
+  <!--Modal -->
+  <div
+    id={`imageModal-${modalId}`}
+    class="fixed inset-0 bg-black/70 z-50 invisible opacity-0 flex flex-col items-center justify-center transition-all duration-300"
+  >
+    <div
+      class="relative mx-auto flex flex-col justify-center items-center max-w-xl md:max-w-4xl lg:max-w-5xl"
+    >
+      <button
+        id={`closeModal-${modalId}`}
+        class="absolute -top-4 text-white text-7xl hover:text-gray-300"
+      >
+        &times;
+      </button>
+
+      <img
+        src={UrlImage}
+        alt={FoodName}
+        class="max-w-[75%] rounded-lg shadow-xl mx-auto aspect-square"
+      />
+    </div>
+  </div>
 </article>
 
 <style></style>
 
 <script define:vars={{ modalId }}>
-    const openModalBtn = document.getElementById(`openModal-${modalId}`);
-    const closeModalBtn = document.getElementById(`closeModal-${modalId}`);
-    const modal = document.getElementById(`imageModal-${modalId}`);
+  const openModalBtn = document.getElementById(`openModal-${modalId}`);
+  const closeModalBtn = document.getElementById(`closeModal-${modalId}`);
+  const modal = document.getElementById(`imageModal-${modalId}`);
 
-    openModalBtn?.addEventListener("click", () => {
-        modal?.classList.remove("invisible", "opacity-0");
-        document.body.style.overflow = "hidden";
-    });
+  openModalBtn?.addEventListener("click", () => {
+    modal?.classList.remove("invisible", "opacity-0");
+    document.body.style.overflow = "hidden";
+  });
 
-    closeModalBtn?.addEventListener("click", () => {
-        modal?.classList.add("invisible", "opacity-0");
-        document.body.style.overflow = "auto";
-    });
+  closeModalBtn?.addEventListener("click", () => {
+    modal?.classList.add("invisible", "opacity-0");
+    document.body.style.overflow = "auto";
+  });
 
-    // Cerrar el modal al hacer clic fuera de la imagen
-    modal?.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.classList.add("invisible", "opacity-0");
-            document.body.style.overflow = "auto";
-        }
-    });
+  // Cerrar el modal al hacer clic fuera de la imagen
+  modal?.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("invisible", "opacity-0");
+      document.body.style.overflow = "auto";
+    }
+  });
 
-    // Cerrar el modal con la tecla Escape
-    document.addEventListener("keydown", (e) => {
-        if (
-            e.key === "Escape" &&
-            modal &&
-            !modal.classList.contains("invisible")
-        ) {
-            modal.classList.add("invisible", "opacity-0");
-            document.body.style.overflow = "auto";
-        }
-    });
+  // Cerrar el modal con la tecla Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal && !modal.classList.contains("invisible")) {
+      modal.classList.add("invisible", "opacity-0");
+      document.body.style.overflow = "auto";
+    }
+  });
 </script>
