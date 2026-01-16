@@ -1,16 +1,27 @@
-# Astro Starter Kit: Basics
+# 🍽️ Menu Digital Astro
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este es un proyecto de **Menú Digital** moderno, ultra rápido y optimizado para dispositivos móviles, construido con el framework **Astro 5** y los estilos de **Tailwind CSS 4**.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Características
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 🎨 **Diseño Moderno:** Interfaz estilizada con Tailwind CSS 4 utilizando su nueva integración nativa con Vite.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- 🎡 **Slider Infinito:** Galería de imágenes con scroll continuo para promociones.
+- 📍 **Mapa Interactivo:** Integración con Leaflet para la ubicación del establecimiento.
+
+## 📂 Estructura del Proyecto
+
+```text
+/
+├── public/              # Archivos estáticos (favicons, robots.txt)
+├── src/
+│   ├── assets/          # Imágenes, fuentes y vectores (procesados por Astro)
+│   ├── components/      # Componentes reutilizables (.astro)
+│   ├── layouts/         # Plantillas base para las páginas
+│   └── pages/           # Rutas del sitio (index.astro, etc.)
+├── astro.config.mjs     # Configuración de Astro y Vite
+├── package.json         # Dependencias y scripts del proyecto
+└── README.md            # Documentación del proyecto
 
 ## 🚀 Project Structure
 
