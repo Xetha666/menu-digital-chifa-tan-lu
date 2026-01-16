@@ -36,7 +36,8 @@ MENU-DIGITAL-ASTRO/
 └── tsconfig.json          # Configuración de TypeScript
 
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+> [!TIP]
+> Para aprender más sobre la estructura de carpetas de un proyecto de Astro, consulta [nuestra guía sobre la estructura del proyecto](https://docs.astro.build/es/basics/project-structure/).
 ```
 
 ## 🛠️ Instalación y Uso Local
