@@ -50,7 +50,7 @@ cd menu-digital-tan-lu
 
 ### 2. Clonar el repositorio
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > Consejo
 
 
