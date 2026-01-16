@@ -2,72 +2,72 @@
     {
         "menu": "MENÚ FAMILIAR '3A'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png"
         ]
     },
     {
         "menu": "MENÚ FAMILIAR '3B'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png"
             
         ]
     },
     {
         "menu": "MENÚ FAMILIAR '4A'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png"
         ]
     },
     {
         "menu": "MENÚ FAMILIAR '4B'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png"
         ]
     },
     {
         "menu": "MENÚ FAMILIAR '5A'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png"
             
         ]
     },
     {
         "menu": "MENÚ FAMILIAR '5B'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png"
         ]
     },
     {
         "menu": "MENÚ FAMILIAR '6A'",
         "images": [
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png",
-            "/src/assets/infinite-scroll-image2.png",
-            "/src/assets/infinite-scroll-image1.png"
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png",
+            "/images/infinite-scroll-image2.png",
+            "/images/infinite-scroll-image1.png"
         ]
     }
 ]
