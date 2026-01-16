@@ -1,6 +1,7 @@
 ---
 import ExtraInfo from "./ExtraInfo.astro";
 import IndiceContent from "./IndiceContent.astro";
+import ChineseLamp from '/src/assets/chinese-lamp.webp';
 ---
 
 <header id="Header" class="w-full h-full snap-start p-1">
@@ -8,7 +9,7 @@ import IndiceContent from "./IndiceContent.astro";
     <picture>
       <img
         class="w-12 h-auto md:w-17.5"
-        src="/src/assets/chinese-lamp.webp"
+        src={ChineseLamp.src}
         alt="Lampara China"
       />
     </picture>
@@ -28,8 +29,8 @@ import IndiceContent from "./IndiceContent.astro";
     </div>
     <picture>
       <img
-        class="w-12 h-auto md:w-[70px]"
-        src="/src/assets/chinese-lamp.webp"
+        class="w-12 h-auto md:w-17.5"
+        src={ChineseLamp.src}
         alt="Lampara China"
       />
     </picture>
