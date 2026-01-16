@@ -1,6 +1,6 @@
 # 🍽️ Menu Digital Astro
 
-Este es un proyecto de **Menú Digital** moderno, ultra rápido y optimizado para dispositivos móviles, construido con el framework **Astro 5** y los estilos de **Tailwind CSS 4**.
+Un menú digital moderno y rápido construido con **Astro**, diseñado para ofrecer una experiencia fluida a los comensales.
 
 ## 🚀 Características
 
@@ -9,37 +9,54 @@ Este es un proyecto de **Menú Digital** moderno, ultra rápido y optimizado par
 - 🎡 **Slider Infinito:** Galería de imágenes con scroll continuo para promociones.
 - 📍 **Mapa Interactivo:** Integración con Leaflet para la ubicación del establecimiento.
 
+## 🚀 Tecnologías Utilizadas
+
+Este proyecto utiliza las siguientes tecnologías clave:
+
+* **Framework:** [Astro v5.1.9](https://astro.build/)
+* **Estilos:** [Tailwind CSS v4.0](https://tailwindcss.com/)
+* **Mapas:** [Leaflet](https://leafletjs.com/) (para ubicación del local)
+
 ## 📂 Estructura del Proyecto
 
 ```text
-/
-├── public/              # Archivos estáticos (favicons, robots.txt)
-├── src/
-│   ├── assets/          # Imágenes, fuentes y vectores (procesados por Astro)
-│   ├── components/      # Componentes reutilizables (.astro)
-│   ├── layouts/         # Plantillas base para las páginas
-│   └── pages/           # Rutas del sitio (index.astro, etc.)
-├── astro.config.mjs     # Configuración de Astro y Vite
-├── package.json         # Dependencias y scripts del proyecto
-└── README.md            # Documentación del proyecto
+MENU-DIGITAL-ASTRO/
+├── public/                # Archivos estáticos (Fuentes, Imágenes, Favicon)
+│   ├── fonts/
+│   └── images/
+├── src/                   # Código fuente
+│   ├── assets/            # Recursos procesables (imágenes optimizadas)
+│   ├── components/        # Componentes reutilizables de UI
+│   ├── data/              # Archivos de datos (ej: JSON con platos del menú)
+│   ├── layouts/           # Plantillas base de las páginas
+│   ├── pages/             # Rutas y páginas del sitio
+│   └── styles/            # Archivos de CSS global
+├── astro.config.mjs       # Configuración de Astro
+├── package.json           # Dependencias y scripts
+└── tsconfig.json          # Configuración de TypeScript
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+
+
+## 🛠️ Instalación y Uso Local
+
+Sigue estos pasos para configurar el proyecto en tu entorno local:
+
+### 1. Clonar el repositorio
+```bash
+git clone [https://github.com/tu-usuario/menu-digital-tan-lu.git](https://github.com/tu-usuario/menu-digital-tan-lu.git)
+cd menu-digital-tan-lu
+
+### 2. Clonar el repositorio
+
+[!IMPORTANT]
+> Consejo
+
+
+```bash
+git clone [https://github.com/tu-usuario/menu-digital-tan-lu.git](https://github.com/tu-usuario/menu-digital-tan-lu.git)
+cd menu-digital-tan-lu
 
 ## 🧞 Commands
 
