@@ -48,29 +48,37 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 git clone [https://github.com/tu-usuario/menu-digital-tan-lu.git](https://github.com/tu-usuario/menu-digital-tan-lu.git)
 cd menu-digital-tan-lu
 
-### 2. Clonar el repositorio
+### 2. Instalar dependencias
 
 > [!IMPORTANT]
-> Consejo
-
+> Asegúrate de tener Node.js instalado y luego ejecuta:
 
 ```bash
-git clone [https://github.com/tu-usuario/menu-digital-tan-lu.git](https://github.com/tu-usuario/menu-digital-tan-lu.git)
-cd menu-digital-tan-lu
+npm install
 
-## 🧞 Commands
+### 3. Ejecutar el proyecto
 
-All commands are run from the root of the project, from a terminal:
+Para iniciar el servidor de desarrollo y ver los cambios en tiempo real:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm run dev
 
-## 👀 Want to learn more?
+## 🧞 Comandos
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Todos los comandos se ejecutan desde la raíz del proyecto, a través de una terminal:
+
+| Comando | Acción |
+| :--- | :--- |
+| `npm install` | Instala las dependencias del proyecto. |
+| `npm run dev` | Inicia el servidor de desarrollo local en `localhost:4321`. |
+| `npm run build` | Compila el sitio para producción en el directorio `./dist/`. |
+| `npm run preview` | Previsualiza la compilación localmente antes de desplegar. |
+| `npm run astro ...` | Ejecuta comandos de la CLI como `astro add` o `astro check`. |
+| `npm run astro -- --help` | Muestra la ayuda de la CLI de Astro. |
+
+## 👀 ¿Quieres aprender más?
+
+> [!NOTE]
+> La documentación en su mayoria esta en inglés
+
+Siéntete libre de revisar [nuestra documentación](https://docs.astro.build) o únete a nuestro [servidor de Discord](https://astro.build/chat).
