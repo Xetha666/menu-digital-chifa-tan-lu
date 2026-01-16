@@ -1,4 +1,6 @@
 ---
+import DeliveryIcon from '/src/assets/delivery-man.png';
+
 const {
   schedule = [
     { day: "Domingo", hours: "Cerrado", isClosed: true },
@@ -19,7 +21,7 @@ const {
 >
   <div class="flex items-center">
     <img
-      src="/src/assets/delivery-man.png"
+      src={DeliveryIcon.src}
       alt="delivery-icon"
       class="size-24 md:size-32 lg:size-48 mr-2"
     />
