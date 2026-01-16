@@ -1,5 +1,6 @@
 ---
 import COMBOS from "../data/Combos.json";
+import PreviewIcon from '/src/assets/preview-icon.png';
 ---
 
 <div
@@ -8,8 +9,8 @@ import COMBOS from "../data/Combos.json";
   {
     COMBOS.map((combo, index) => (
       <article class="w-full my-0 mx-auto font-sans font-bold max-w-md sm:max-w-sm">
-        <div class="relative w-[60%] outline-2 outline outline-black my-0 mx-auto text-center sm:w-4/5">
-          <div class="absolute -top-4 left-1/4 w-1/2 bg-linear-to-r from-red-800 to-red-700 text-yellow-100 outline-2 outline outline-black text-base font-bold my-0 mx-auto sm:w-3/5">
+        <div class="relative w-[60%] outline-2 outline-black my-0 mx-auto text-center sm:w-4/5">
+          <div class="absolute -top-4 left-1/4 w-1/2 bg-linear-to-r from-red-800 to-red-700 text-yellow-100 outline-2 outline-black text-base font-bold my-0 mx-auto sm:w-3/5">
             <h2 class="">{combo.number}</h2>
           </div>
 
@@ -26,7 +27,7 @@ import COMBOS from "../data/Combos.json";
               >
                 <img
                   class="size-6 pr-1"
-                  src="/src/assets/preview-icon.png"
+                  src={PreviewIcon.src}
                   alt="eye-icon"
                 />
                 Ver
