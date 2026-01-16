@@ -1,4 +1,5 @@
 ---
+import PreviewIcon from '/src/assets/preview-icon.png';
 const {
   UrlImage,
   FoodPrice,
@@ -30,7 +31,7 @@ const modalId = FoodName.toLowerCase().replace(/\s+/g, "-");
             >
               <img
                 class="w-6 lg:w-9 mr-1"
-                src="/src/assets/preview-icon.png"
+                src={PreviewIcon.src}
                 alt="eye-icon"
               />
               Ver
