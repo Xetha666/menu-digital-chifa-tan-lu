@@ -19,6 +19,9 @@ Este proyecto utiliza las siguientes tecnologías clave:
 
 ## 📂 Estructura del Proyecto
 
+> [!TIP]
+> Para aprender más sobre la estructura de carpetas de un proyecto de Astro, consulta [nuestra guía sobre la estructura del proyecto](https://docs.astro.build/es/basics/project-structure/).
+
 ```text
 MENU-DIGITAL-ASTRO/
 ├── public/                # Archivos estáticos (Fuentes, Imágenes, Favicon)
@@ -34,11 +37,9 @@ MENU-DIGITAL-ASTRO/
 ├── astro.config.mjs       # Configuración de Astro
 ├── package.json           # Dependencias y scripts
 └── tsconfig.json          # Configuración de TypeScript
-
-
-> [!TIP]
-> Para aprender más sobre la estructura de carpetas de un proyecto de Astro, consulta [nuestra guía sobre la estructura del proyecto](https://docs.astro.build/es/basics/project-structure/).
 ```
+
+
 
 ## 🛠️ Instalación y Uso Local
 
