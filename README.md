@@ -37,7 +37,7 @@ MENU-DIGITAL-ASTRO/
 
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
+```
 
 ## 🛠️ Instalación y Uso Local
 
@@ -47,7 +47,7 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 ```bash
 git clone [https://github.com/tu-usuario/menu-digital-tan-lu.git](https://github.com/tu-usuario/menu-digital-tan-lu.git)
 cd menu-digital-tan-lu
-
+```
 ### 2. Instalar dependencias
 
 > [!IMPORTANT]
@@ -55,6 +55,7 @@ cd menu-digital-tan-lu
 
 ```bash
 npm install
+```
 
 ### 3. Ejecutar el proyecto
 
@@ -62,6 +63,7 @@ Para iniciar el servidor de desarrollo y ver los cambios en tiempo real:
 
 ```bash
 npm run dev
+```
 
 ## 🧞 Comandos
 
